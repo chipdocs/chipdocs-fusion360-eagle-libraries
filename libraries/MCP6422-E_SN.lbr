@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.6.2">
+  <drawing>
+    <settings><setting alwaysvectorfont="no"/><setting verticaltext="up"/></settings>
+    <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+    <layers>
+      <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+      <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+      <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+      <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+      <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+      <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+      <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+      <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+      <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+      <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+      <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+      <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+      <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+      <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+      <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+      <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+    </layers>
+    <library>
+      <packages>
+        <package name="C636325_SOIC-8">
+          <description>MCP6422-E/SN — Clean-Room IPC-7351B / JEDEC MS-012-AA</description>
+          <smd name="1" x="-2.7" y="1.905" dx="1.55" dy="0.6" layer="1" roundness="25"/>
+          <smd name="2" x="-2.7" y="0.635" dx="1.55" dy="0.6" layer="1" roundness="25"/>
+          <smd name="3" x="-2.7" y="-0.635" dx="1.55" dy="0.6" layer="1" roundness="25"/>
+          <smd name="4" x="-2.7" y="-1.905" dx="1.55" dy="0.6" layer="1" roundness="25"/>
+          <smd name="5" x="2.7" y="-1.905" dx="1.55" dy="0.6" layer="1" roundness="25"/>
+          <smd name="6" x="2.7" y="-0.635" dx="1.55" dy="0.6" layer="1" roundness="25"/>
+          <smd name="7" x="2.7" y="0.635" dx="1.55" dy="0.6" layer="1" roundness="25"/>
+          <smd name="8" x="2.7" y="1.905" dx="1.55" dy="0.6" layer="1" roundness="25"/>
+          <wire x1="-1.95" y1="2.45" x2="1.95" y2="2.45" width="0.15" layer="21"/>
+          <wire x1="1.95" y1="-1.385" x2="1.95" y2="-1.155" width="0.15" layer="21"/>
+          <wire x1="1.95" y1="-0.115" x2="1.95" y2="0.115" width="0.15" layer="21"/>
+          <wire x1="1.95" y1="1.155" x2="1.95" y2="1.385" width="0.15" layer="21"/>
+          <wire x1="-1.95" y1="-2.45" x2="1.95" y2="-2.45" width="0.15" layer="21"/>
+          <wire x1="-1.95" y1="-1.385" x2="-1.95" y2="-1.155" width="0.15" layer="21"/>
+          <wire x1="-1.95" y1="-0.115" x2="-1.95" y2="0.115" width="0.15" layer="21"/>
+          <wire x1="-1.95" y1="1.155" x2="-1.95" y2="1.385" width="0.15" layer="21"/>
+          <circle x="-3.93" y="1.905" radius="0.18" width="0" layer="21"/>
+          <wire x1="-3.73" y1="-2.7" x2="3.73" y2="-2.7" width="0.05" layer="39"/>
+          <wire x1="3.73" y1="-2.7" x2="3.73" y2="2.7" width="0.05" layer="39"/>
+          <wire x1="3.73" y1="2.7" x2="-3.73" y2="2.7" width="0.05" layer="39"/>
+          <wire x1="-3.73" y1="2.7" x2="-3.73" y2="-2.7" width="0.05" layer="39"/>
+          <text x="-3.73" y="3.3" size="1.0" layer="25">&gt;NAME</text>
+          <text x="-3.73" y="-4.3" size="1.0" layer="27">&gt;VALUE</text>
+        </package>
+      </packages>
+      <symbols>
+        <symbol name="MCP6422-E_SN_SYM">
+          <wire x1="-15.24" y1="-8.89" x2="15.24" y2="-8.89" width="0.254" layer="94"/>
+          <wire x1="15.24" y1="-8.89" x2="15.24" y2="8.89" width="0.254" layer="94"/>
+          <wire x1="15.24" y1="8.89" x2="-15.24" y2="8.89" width="0.254" layer="94"/>
+          <wire x1="-15.24" y1="8.89" x2="-15.24" y2="-8.89" width="0.254" layer="94"/>
+          <text x="-15.24" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+          <text x="-15.24" y="-11.43" size="1.778" layer="96">&gt;VALUE</text>
+          <pin name="VDD" x="-20.32" y="6.35" length="middle" direction="pwr"/>
+          <pin name="VSS" x="-20.32" y="3.81" length="middle" direction="pwr"/>
+          <pin name="V___V_OUT_OUTA" x="20.32" y="6.35" length="middle" direction="io" rot="R180"/>
+          <pin name="V____V___IN_INA" x="20.32" y="3.81" length="middle" direction="io" rot="R180"/>
+          <pin name="V_+__V_+_IN_INA" x="20.32" y="1.27" length="middle" direction="io" rot="R180"/>
+          <pin name="V_+_INB" x="20.32" y="-1.27" length="middle" direction="io" rot="R180"/>
+          <pin name="V___INB" x="20.32" y="-3.81" length="middle" direction="io" rot="R180"/>
+          <pin name="V_OUTB" x="20.32" y="-6.35" length="middle" direction="io" rot="R180"/>
+        </symbol>
+      </symbols>
+      <devicesets>
+        <deviceset name="MCP6422-E_SN" prefix="U">
+          <gates>
+            <gate name="G$1" symbol="MCP6422-E_SN_SYM" x="0" y="0"/>
+          </gates>
+          <devices>
+            <device name="" package="C636325_SOIC-8">
+              <connects>
+                <connect gate="G$1" pin="VDD" pad="8"/>
+                <connect gate="G$1" pin="VSS" pad="4"/>
+                <connect gate="G$1" pin="V___V_OUT_OUTA" pad="1"/>
+                <connect gate="G$1" pin="V____V___IN_INA" pad="2"/>
+                <connect gate="G$1" pin="V_+__V_+_IN_INA" pad="3"/>
+                <connect gate="G$1" pin="V_+_INB" pad="5"/>
+                <connect gate="G$1" pin="V___INB" pad="6"/>
+                <connect gate="G$1" pin="V_OUTB" pad="7"/>
+              </connects>
+            </device>
+          </devices>
+        </deviceset>
+      </devicesets>
+    </library>
+  </drawing>
+</eagle>
