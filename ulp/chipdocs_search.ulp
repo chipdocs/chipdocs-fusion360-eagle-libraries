@@ -1,0 +1,26 @@
+#usage "<b>ChipDocs.org Component Library Search for Autodesk Fusion 360 Electronics & EAGLE</b><p>"
+       "Search 7,900+ verified IPC-7351B .lbr libraries (Symbol + Footprint + DeviceSet) on chipdocs.org.<p>"
+       "Usage: RUN chipdocs_search.ulp<p>"
+       "Author: ChipDocs.org (https://chipdocs.org)"
+
+string query = "STM32F103C8T6";
+
+int res = dlgDialog("ChipDocs.org — Fusion 360 & EAGLE .LBR Finder") {
+  dlgLabel("Enter Part Number (MPN, e.g. STM32F103C8T6, ESP32-S3, CH340G, LM2596, NRF52840):");
+  dlgStringEdit(query);
+  dlgHBoxLayout {
+    dlgPushButton("+Search on chipdocs.org") { dlgAccept(1); }
+    dlgPushButton("Open IPC-7351B Tools") { dlgAccept(2); }
+    dlgPushButton("Cancel") { dlgReject(); }
+  }
+};
+
+if (res == 1 && strlen(query) > 0) {
+  string url;
+  sprintf(url, "https://chipdocs.org/parts?q=%s", query);
+  string cmd;
+  sprintf(cmd, "Open your browser to download verified .LBR + 3D STEP:\n\n%s\n\nDirect API JSON:\nhttps://chipdocs.org/api/v1/components/search?q=%s", url, query);
+  dlgMessageBox(cmd);
+} else if (res == 2) {
+  dlgMessageBox("Free Hardware Engineering Calculators:\nhttps://chipdocs.org/tools\n\nDrop-In IC Equivalents:\nhttps://chipdocs.org/equivalents");
+}
