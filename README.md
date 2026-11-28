@@ -1,8 +1,8 @@
 # ChipDocs Autodesk Fusion 360 Electronics & EAGLE (`.lbr`) Library
 
-![Verified Parts](https://img.shields.io/badge/Verified_.LBR_Libraries-8,865-ea580c?style=flat-square) ![Format](https://img.shields.io/badge/Eagle_XML-DTD_9.6.2-0f172a?style=flat-square) ![Standard](https://img.shields.io/badge/IPC--7351B_%2B_60%25_Paste-10b981?style=flat-square)
+![Verified Parts](https://img.shields.io/badge/Verified_.LBR_Libraries-9,152-ea580c?style=flat-square) ![Format](https://img.shields.io/badge/Eagle_XML-DTD_9.6.2-0f172a?style=flat-square) ![Standard](https://img.shields.io/badge/IPC--7351B_%2B_60%25_Paste-10b981?style=flat-square)
 
-> Clean-room **Autodesk Fusion 360 Electronics** & **CadSoft EAGLE 9.6.2** `.lbr` libraries (complete `<packages>` + `<symbols>` + `<devicesets>` + 60% windowed QFN thermal paste stencils) for **8,865+ components** from **[chipdocs.org](https://chipdocs.org)**.
+> Clean-room **Autodesk Fusion 360 Electronics** & **CadSoft EAGLE 9.6.2** `.lbr` libraries (complete `<packages>` + `<symbols>` + `<devicesets>` + 60% windowed QFN thermal paste stencils) for **9,152+ components** from **[chipdocs.org](https://chipdocs.org)**.
 
 ## How to Import into Fusion 360 Electronics / EAGLE
 1. Download any `.lbr` file from `libraries/` below or directly from [chipdocs.org](https://chipdocs.org/parts).
